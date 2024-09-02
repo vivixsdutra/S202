@@ -5,7 +5,7 @@ db = Database(database="mercado", collection="compras")
 #db.resetDatabase()
 
 # 1- Total de Vendas por dia :
-# 1- Total de Vendas por dia :
+
 result = db.collection.aggregate([
     {"$unwind": "$produtos"},
     {"$group": {"_id": "$data_compra", "totalVendas": {"$sum": {"$multiply": ["$produtos.quantidade", "$produtos.preco"]}}}},
