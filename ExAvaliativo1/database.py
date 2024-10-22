@@ -8,7 +8,7 @@ class Database:
 
     def connect(self, database, collection):
         try:
-            connectionString = "mongodb+srv://root:root@cluster0.ci2yf.mongodb.net/"
+            connectionString = "mongodb+srv://root:<password>@cluster0.ci2yf.mongodb.net/"
             self.clusterConnection = pymongo.MongoClient(
                 connectionString,
                 tlsAllowInvalidCertificates=True
