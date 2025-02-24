@@ -1,2 +1,2 @@
 # S202
-Repositório referente a matéria de Banco de Dados II
+Repository for the Database II class
